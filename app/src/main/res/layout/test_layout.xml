@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="180dp"
+        android:background="#ff0000"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:background="#ff0000"
+        android:layout_height="100dp" />
+
+    <WebView
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:id="@+id/webView"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="96dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/coupon_white_left"
+            android:layout_height="96dp"/>
+
+
+        <ImageView
+            android:id="@+id/iv_coupon_color"
+            android:src="@drawable/coupon_red_icon"
+            android:layout_width="98dp"
+            android:layout_height="96dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
