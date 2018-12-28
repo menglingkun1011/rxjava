@@ -31,7 +31,7 @@ public class ThirdActivity extends BaseActivity {
                 .create(NewsService.class);
 
         newsService.getNewList("头条","8f8f5ff9be5e0e8c07a1e4a5c7e7b639")
-                .compose(bindToLifecycle())
+//                .compose(bindToLifecycle())
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Observer<NewRespBean>() {
